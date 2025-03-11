@@ -1,54 +1,27 @@
-Backup & Log Manager
+  <h1>Backup & Log Manager</h1>
+        <p><strong>Backup & Log Manager</strong>, belirlenen klasörleri ve veritabanlarını yedekleyen, log tutan ve isteğe bağlı e-posta bildirimi gönderen bir PHP tabanlı sistemdir.</p>
+        
 
-📌 Proje Açıklaması
+        <h2>🚀 Kurulum</h2>
+        <ol>
+            <li>PHP 7.x veya üzeri sürümünü bilgisayarınıza kurun.</li>
+            <li>Proje dosyalarını sunucunuza veya yerel bilgisayarınıza kopyalayın.</li>
+            <li><code>config.php</code> dosyasını açıp kendi ayarlarınıza göre düzenleyin.</li>
+        </ol>
 
-Bu proje, belirlenen dizinlerin ve veritabanının yedeğini alarak ZIP dosyası olarak saklar. Aynı zamanda yapılan işlemleri log dosyasına kaydeder ve isteğe bağlı olarak e-posta bildirimi gönderebilir.
+        <h2>⚙️ Kullanım</h2>
+        <h3>1️⃣ Yedekleme işlemini başlat</h3>
+        <p>Terminal veya komut satırında aşağıdaki komutu çalıştır:</p>
+        <pre><code>php backup.php</code></pre>
 
-🚀 Kurulum
+        <h3>2️⃣ Logları görüntüle</h3>
+        <p>Yedekleme loglarını görmek için şu komutu çalıştır:</p>
+        <pre><code>php log_manager.php</code></pre>
 
-1️⃣ Depoyu Klonla
-git clone https://github.com/kullaniciadi/backup-log-manager.git
-cd backup-log-manager
+        <h3>3️⃣ E-posta bildirimi gönder</h3>
+        <p>Eğer yedekleme sonrası e-posta almak istiyorsanız, <code>config.php</code> dosyasında <code>'email' => ['enabled' => true]</code> olarak ayarlayın.</p>
+        <pre><code>php send_mail.php</code></pre>
 
-2️⃣ PHP Bağımlılıklarını Yükle
-
-PHP'nin ZipArchive desteği açık olmalıdır. Eğer yoksa aşağıdaki komutlarla yükleyebilirsin:
-
-sudo apt install php-zip # Ubuntu/Debian
-sudo yum install php-zip # CentOS/RHEL
-
-3️⃣ Ayarları Yapılandır
-
-config.php dosyasını açarak aşağıdaki bilgileri kendine göre düzenle:
-
-backup_directories: Yedeklenecek dizinleri belirleyin.
-
-backup_path: Yedeklerin saklanacağı konumu belirleyin.
-
-log_path: Logların saklanacağı konumu belirleyin.
-
-database: Veritabanı yedeği almak istiyorsanız ilgili bilgileri girin.
-
-email: Yedekleme sonrası e-posta almak istiyorsanız bilgileri doldurun.
-
-🛠 Kullanım
-
-📌 Yedekleme İşlemini Başlat
-
-php backup.php
-
-Başarılı olursa backups/ klasörü içinde bir ZIP dosyası oluşur.
-
-📌 Logları Görüntüle
-
-php log_manager.php
-
-📌 E-posta Bildirimi Gönder
-
-Eğer config.php içinde email['enabled'] değeri true ise şu komutla bildirim gönderebilirsiniz:
-
-php send_mail.php
-
-📜 Lisans
-
-Bu proje MIT lisansı ile sunulmaktadır. Özgürce kullanabilir ve geliştirebilirsiniz. 😊
+        <h2>📌 Geliştirici Bilgileri</h2>
+        <p><strong>Geliştirici:</strong> Mustafa Seymen</p>
+        <p><strong>İletişim:</strong> <a href="mailto:mseymend@gmail.com">mseymend@gmail.com</a></p>

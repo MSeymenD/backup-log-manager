@@ -8,7 +8,7 @@ Bu proje, belirlenen dizinlerin ve veritabanının yedeğini alarak ZIP dosyası
 
 1️⃣ Depoyu Klonla
 
-git clone https://github.com/kullaniciadi/backup-log-manager.git
+git clone https://github.com/MSeymenD/backup-log-manager.git
 cd backup-log-manager
 
 2️⃣ PHP Bağımlılıklarını Yükle
